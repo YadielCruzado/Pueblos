@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About</title>
+<title>San Juan</title>
 <meta charset="utf-8">
 <link rel="icon" href="images/favicon.ico">
-<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images - pueblo/logo.ico">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
 <script src="js/jquery.js"></script>
 <script src="js/jquery-migrate-1.1.1.js"></script>
 <script src="js/superfish.js"></script>
+<script src="js/sForm.js"></script>
+<script src="js/jquery.jqtransform.js"></script>
 <script src="js/jquery.equalheights.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="js/jquery.ui.totop.js"></script>
 <script>
 $(window).load(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'random',
+        pagination: false, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: true,
+        waitBannerAnimation: false,
+        progressBar: false
+    });
+    $("#tabs").tabs();
     $().UItoTop({
         easingType: 'easeOutQuart'
     });
@@ -24,27 +46,27 @@ $(window).load(function () {
 <link rel="stylesheet" media="screen" href="css/ie.css">
 <![endif]-->
 </head>
-<body>
+<body class="page1">
 <header>
   <div class="container_12">
     <div class="grid_12">
-      <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+      <h1><a href="index.html"><img src="images - pueblo/logo.png" alt=""></a></h1>
       <div class="clear"></div>
     </div>
     <div class="menu_block">
       <nav>
         <ul class="sf-menu">
-          <li><a href="index.html">Home</a></li>
-          <li class="current"><a href="about.html">Informacion</a>
-            <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li class="with_ul"><a href="about.html">About</a>
+           <!-- <ul>
               <li><a href="#">Agency</a></li>
               <li><a href="#">News</a></li>
               <li><a href="#">Team</a></li>
-            </ul>
+            </ul>-->
           </li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html">Lugares de Interés</a></li>
+          <li><a href="tours.html">Info</a></li>
+          <li><a href="blog.html">Legislatura</a></li>
           <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
@@ -103,10 +125,9 @@ $(window).load(function () {
       </div>
       <div class="clear"></div>
       <div class="grid_9">
-        <h3 class="head1">What We Offer</h3>
-        <p class="text1 tx2">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque vehicula eu nislew teget convallis. Vivamus sit amet fringilla nibh, et fringilla elit. Ut in lacus in nulla varius pulvinar. Donec eu magna pretiu yue facilisis sem a, rutrum magna.  Fet fringilla elit. Ut in lacus in nulla varius pulvinar.</p>
-        <p>Sed dignissim est mauris. Praesent pulvinar vestibulum lorem tristique faucibus. Quisque at tincidunt sapien. Fusce scelerisque dolor nec justo tempus, sed cursus nisl interdum. Vivamus justo mi, semper non semper nec, commodo et ipsum. Integer a porta erat. Pellentesque eu egestas purus, vitae feugiat augue. Sed lobortis tristique convallis. Mauris in diam tempor, imperdiet massa ut, euismod risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sollicitudin pretium eros ac semper. Aenean nec bibendum mauris, eget luctus velit. Sed sodales lectus imperdiet neque pretium ultrices. Nulla nec urna nec erat elementum tempor.</p>
-        <ul class="list2">
+        <h3 class="head1">Geografía</h3>
+        <p class="text1 tx2">La ciudad de San Juan está localizada en la costa norte de Puerto Rico y se extiende a lo largo de 123.5 kilómetros cuadrados (47.5 millas²). Es la capital de la Isla y su fundación data del siglo XVI. Se le conoce también como “la ciudad amurallada”, “ciudad capitalina”, “ciudad de las losas”, “ciudad colonial” y a sus habitantes como “los capitalinos” y “los senadores”, éste último en alusión a su equipo de béisbol. Constituye el municipio más poblado y con mayor densidad poblacional para un total de 442,447 sanjuaneros, según el Censo 2000. Sin embargo, su población ha experimentado un decrecimiento en las últimas décadas, producto del movimiento poblacional hacia los municipios adyacentes. La ciudad está organizada en 18 barrios: Caimito, El Cinco, Cupey, Gobernador Piñero, Hato Rey Central, Hato Rey Norte, Hato Rey Sur, Monacillo, Monacillo Urbano, Oriente, Pueblo de Río Piedras, Quebrada Arenas, Sabana Llana Norte, Sabana Llana Sur, San Juan Antiguo, Santurce, Tortugo y Universidad. El barrio más antiguo de la ciudad es San Juan Antiguo, conformado por la isleta de San Juan. Su santo patrón es San Juan Bautista, cuyas fiestas se celebran en el mes de junio.</p>
+        <!--<ul class="list2">
           <li><a href="#">Fgo psu dr sit amek </a></li>
           <li><a href="#">Sem psum dr sit ametre conse</a></li>
           <li><a href="#">Rame sum dr sit ame consec</a></li>
@@ -118,22 +139,23 @@ $(window).load(function () {
           <li><a href="#">Zdfem psum dr sittr amewe </a></li>
           <li><a href="#">Game sum dr sit ame conse</a></li>
           <li><a href="#">Dem psum dr sit ametekot </a></li>
-        </ul>
+        </ul>-->
         <div class="clear"></div>
       </div>
       <div class="grid_3">
-        <h3 class="head1">testimonial</h3>
+       <!--- <h3 class="head1">testimonial</h3>
         <blockquote>
           <p class="text1"> “ Nnatoque penatibus tkamet magnis dis parturient montes, nascetur ridiculus mustro lito. Quisque vehicula eu nisleweri teget convallis. Vivamus sit amet fringilla nibt fringilla. ”</p>
           <div class="bq_bot">
             <div class="text1">Mark Johnson</div>
             Director of Product Management </div>
-        </blockquote>
+        </blockquote>-->
+        <img src="images/pr.jpeg" alt="">
       </div>
       <div class="clear"></div>
     </div>
   </div>
-  <div class="bottom_block">
+  <!--<div class="bottom_block">
     <div class="container_12">
       <div class="grid_2 prefix_2">
         <ul>
@@ -158,14 +180,14 @@ $(window).load(function () {
         TEL: 1-800-234-5678<br>
         <a href="#">info@demolink.org</a> </div>
       <div class="clear"></div>
-    </div>
+    </div>-->
   </div>
 </div>
 <footer>
   <div class="container_12">
     <div class="grid_12">
       <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
-      <div class="copy"> Journey &copy; 2045 | <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
+      <div class="copy"> CCOM4305@2022  UPR-Arecibo  Ian K & Yadiel| <a href="#">Privacy Policy</a> | Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
     </div>
     <div class="clear"></div>
   </div>
